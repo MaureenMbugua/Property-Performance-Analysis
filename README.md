@@ -17,9 +17,7 @@ The analysis uses five datasets/tables:
 
 **Locations, Properties, Units:** Clean datasets - no missing or duplicate values, appropriate data types, and valid numeric ranges.
 
-
 **Tenants:** One missing email entry, possibly incomplete contact information.
-
 
 **Leases:**
 
@@ -27,7 +25,7 @@ The analysis uses five datasets/tables:
 
 - Missing end_date values - possibly ongoing leases or incomplete entries.
 
-- Negative values in rent_per_month and arrears - (potential data entry or system errors or overpayment in the case of arrears).
+- Negative values in rent_per_month and arrears - potential data entry or system errors, or overpayment in the case of arrears.
 
 - end_date earlier than start_date in some records - flagged as invalid leases.
 
@@ -43,17 +41,17 @@ The analysis uses five datasets/tables:
 
 - Created new columns:
 
-lease_duration_months — duration between start_date and end_date.
+`lease_duration_months` — duration between start_date and end_date.
 
-lease_status — categorized as ongoing, expired, or invalid.
+`lease_status` — categorized as ongoing, expired, or invalid.
 
-valid_lease — 0 or 1.
+`valid_lease` — 0 or 1.
 
-annual_rent — computed as monthly rent × 12.
+`annual_rent` — computed as monthly rent × 12.
 
 - Exported cleaned datasets for analysis.
 
-> For detailed cleaning and transformation steps, see notebook: [README.md](https://github.com/MaureenMbugua/Bank-Transactions-Analysis/blob/main/README.md)
+> For detailed cleaning and transformation steps, see notebook: [Notebook](https://github.com/MaureenMbugua/Property-Performance-Analysis/blob/main/Property_Performance_Analysis.ipynb)
 
 ## Analysis
 
@@ -61,7 +59,7 @@ annual_rent — computed as monthly rent × 12.
 
 The project includes SQL-based analysis to explore key performance metrics such as rent billed, arrears, and occupancy across locations and properties.
 
-> For the full SQL queries, refer to the query file: [README.md](https://github.com/MaureenMbugua/Bank-Transactions-Analysis/blob/main/README.md)
+> For the full SQL queries, refer to the query file: [SQL Queries](https://github.com/MaureenMbugua/Property-Performance-Analysis/blob/main/SQL_Queries_Property_Performance.sql)
 
 ### Dashboard
 
@@ -69,7 +67,7 @@ A Power BI dashboard was also developed to visually summarize key insights on re
 
 ![Dashboard image](Dashboard_image_Property_Performance.png)
 
-> To interact with the actual dashboard, refer to the Power BI dashboard file: [README.md](https://github.com/MaureenMbugua/Bank-Transactions-Analysis/blob/main/README.md)
+> To interact with the actual dashboard, refer to the Power BI dashboard file: [Dashboard](https://github.com/MaureenMbugua/Property-Performance-Analysis/blob/main/Dashboard_Property_Performance.pbix)
 
 ## Insights and Recommendations
 

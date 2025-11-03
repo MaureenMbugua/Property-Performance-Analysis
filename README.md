@@ -114,3 +114,6 @@ A few leases were flagged as invalid due to data inconsistencies, such as negati
 **Recommendation:**
 - Conduct a lease data audit to identify and correct invalid entries, ensuring that billing, arrears, and occupancy calculations reflect accurate information.
 - Implement data validation checks at the point of entry, as well as periodic data quality reviews.
+
+## Next Steps
+- Predictive analytics using Python
